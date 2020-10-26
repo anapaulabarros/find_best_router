@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="jumbo">
+    <h2>Search route:</h2>
+        <form action="{{ url_for('caminho') }}" method="post">
+          <fieldset>
+            <div class="form-group">
+                <label for="origem">Origin: </label>
+                <input type="text" id="origem" name="origem" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="destino">Destiny: </label>
+                <input type="text" id="destino" name="destino" class="form-control">
+              </div>
+
+            <button type="submit">Search</button>
+          </fieldset>
+        </form>
+      <div>
+          <fieldset>
+          <h3>Output:</h3>
+              <div>
+
+                  <p>Route: {{rotas}}</p>
+                  <p>Cost: {{custo}}</p>
+              </div>
+        </fieldset>
+      </div>
+
+  </div>
+{% endblock %}

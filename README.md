@@ -64,4 +64,3 @@ Para uma melhor fluides da nossa conversa, atente-se aos seguintes pontos:
   * Estrutura dos arquivos/pacotes,
   * Explique as decisões de design adotadas para a solução,
   * Descreva sua APÌ Rest de forma simplificada.
-
